@@ -1,7 +1,7 @@
 import setuptools
 
-with open("README.md", mode="r", encoding="utf-8") as fh:
-    long_description = fh.read()
+#with open("README.md", mode="r", encoding="utf-8") as fh:
+#    long_description = fh.read()
 
 REQUIRED_PACKAGES = [
     'jamo',
@@ -16,9 +16,7 @@ setuptools.setup(
     description="g2pK: g2p module for Korean",
     install_requires=REQUIRED_PACKAGES,
     license='Apache License 2.0',
-    long_description=long_description,
-    long_description_content_type="text/markdown",
-    url="https://github.com/Kyubyong/g2pK",
+    url="https://github.com/orbisAI/g2pK",
     packages=setuptools.find_packages(),
     package_data={'g2pk': ['g2pk/idioms.txt', 'g2pk/rules.txt', 'g2pk/table.csv']},
     python_requires=">=3.6",
